@@ -8,10 +8,10 @@ Pose estimation keypoints are widely used in Sign Language Recognition (SLR) as 
 ### Pose-Estimation Keypoints
 The keypoints used here were extracted using MediaPipe's Holistic package, specifically the Pose and Hand solutions. This extraction results in a total of 75 keypoints, each composed of x, y and z coordinates. 
 
-[mediapipe pose map](images/mp_body.png)
+![mediapipe pose map](images/mp_body.png)
 Figure 1: MediaPipe Pose keypoint mapping. [Ref](https://github.com/google/mediapipe/blob/master/docs/solutions/pose.md)
 
-[mediapipe hand map](images/mp_hand.png)
+![mediapipe hand map](images/mp_hand.png)
 Figure 2: MediaPipe Hand keypoint mapping. [Ref](https://github.com/google/mediapipe/blob/master/docs/solutions/hands.md)
 
 A mapping of keypoint to associated body part is provided [here](misc/kp_map.json). For clarity of reference within the adjoining notebook: 
@@ -34,7 +34,7 @@ The model architecture used in these experiments is as detailed in [1](https://o
 
 This architecture is illustrated below: 
 
-[model architecture](images/PoseFormer.png)
+![model architecture](images/PoseFormer.png)
 Figure 3: Model architecture. [1](https://openaccess.thecvf.com/content/ICCV2023W/ACVR/papers/Holmes_From_Scarcity_to_Understanding_Transfer_Learning_for_the_Extremely_Low_ICCVW_2023_paper.pdf)
 
 
