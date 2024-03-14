@@ -39,7 +39,7 @@ This architecture is illustrated below:
 
 ![model architecture](images/PoseFormer.png)
 
-Figure 3: Model architecture. [1](https://openaccess.thecvf.com/content/ICCV2023W/ACVR/papers/Holmes_From_Scarcity_to_Understanding_Transfer_Learning_for_the_Extremely_Low_ICCVW_2023_paper.pdf)
+Figure 3: Model architecture. [[1]](https://openaccess.thecvf.com/content/ICCV2023W/ACVR/papers/Holmes_From_Scarcity_to_Understanding_Transfer_Learning_for_the_Extremely_Low_ICCVW_2023_paper.pdf)
 
 
 The same hyperparameters were also used in these experiments and are summarized below: 
