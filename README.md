@@ -20,7 +20,7 @@ A mapping of keypoint to associated body part is provided [here](misc/kp_map.jso
  - Keypoint indices 54-74 refer to the right hand
 
 ### Model
-The model architecture used in these experiments is as detailed in [1](https://openaccess.thecvf.com/content/ICCV2023W/ACVR/papers/Holmes_From_Scarcity_to_Understanding_Transfer_Learning_for_the_Extremely_Low_ICCVW_2023_paper.pdf) and summarised below: 
+The model architecture used in these experiments is as detailed in [[1]](https://openaccess.thecvf.com/content/ICCV2023W/ACVR/papers/Holmes_From_Scarcity_to_Understanding_Transfer_Learning_for_the_Extremely_Low_ICCVW_2023_paper.pdf) and summarised below: 
 
 1. Four stacked 1D convolutional layers with increasing kernel size (3, 5, 7, 9) to learn local temporal patterns for each coordinate individually. Padding added to maintain sequence length. 
 2. Embeddings generated independently from each frame in the sequence to learn non-linear relationships between individual keypoint coordinates. This consists of four blocks containing:
@@ -52,7 +52,7 @@ The same hyperparameters were also used in these experiments and are summarized 
 Once trained, the model state from the best performing epoch in terms of validation accuracy was used to determine macro F1 scores for the baseline and all permuted runs.
 
 ### Permutation Feature Importance
-Permutation Feature Importance[2](https://link.springer.com/content/pdf/10.1023/a:1010933404324.pdf) is a model-agnostic procedure for determining the features that most contribute to the performance of a trained model. The procedure typically involves randomly shuffling the values of the feature of interest in order to remove any association between that independent feature and the target variable. If this feature contributes significantly to correct predictions, this shuffling operation should result in a marked decrease in performance. Conversely, if the decrease in performance is negligible, this suggests that this feature does not contribute significantly to classification decisions. Here, we use this measure of importance with a slight modification which avoids the potentially costly shuffling operation. We, in place of shuffling a given feature, replace it with values drawn uniformly at random within the range of all features in the dataset. An example process can be found in the adjoining notebook titled [example_process.ipynb](example_process.ipynb).
+Permutation Feature Importance [[2]](https://link.springer.com/content/pdf/10.1023/a:1010933404324.pdf) is a model-agnostic procedure for determining the features that most contribute to the performance of a trained model. The procedure typically involves randomly shuffling the values of the feature of interest in order to remove any association between that independent feature and the target variable. If this feature contributes significantly to correct predictions, this shuffling operation should result in a marked decrease in performance. Conversely, if the decrease in performance is negligible, this suggests that this feature does not contribute significantly to classification decisions. Here, we use this measure of importance with a slight modification which avoids the potentially costly shuffling operation. We, in place of shuffling a given feature, replace it with values drawn uniformly at random within the range of all features in the dataset. An example process can be found in the adjoining notebook titled [example_process.ipynb](example_process.ipynb).
 
 
 ### References
