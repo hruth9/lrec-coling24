@@ -1,6 +1,6 @@
 # The Key Points: Using Feature Importance to Identify Shortcomings in Sign Language Recognition Models
 
-The following repository details an example process of the experiments detailed in the above paper. 
+This repository details an example process of the experiments detailed in the above paper. 
 
 ### Paper Abstract
 Pose estimation keypoints are widely used in Sign Language Recognition (SLR) as a means of generalising to unseen signers. Despite the advantages of keypoints, SLR models struggle to achieve high recognition accuracy for many signed languages due to the large degree of variability between occurrences of the same signs, the lack of large datasets and the imbalanced nature of the data therein. In this paper, we seek to provide a deeper analysis into th ways that these keypoints are used by models in order to determine which are the most informative to SLR, identify potentially redundant ones and investigate whether keypoints that are central to differentiating signs in practice are being effectively used as expected by models. 
