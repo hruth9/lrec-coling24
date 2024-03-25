@@ -6,7 +6,7 @@ The following repository details an example process of the experiments detailed 
 Pose estimation keypoints are widely used in Sign Language Recognition (SLR) as a means of generalising to unseen signers. Despite the advantages of keypoints, SLR models struggle to achieve high recognition accuracy for many signed languages due to the large degree of variability between occurrences of the same signs, the lack of large datasets and the imbalanced nature of the data therein. In this paper, we seek to provide a deeper analysis into th ways that these keypoints are used by models in order to determine which are the most informative to SLR, identify potentially redundant ones and investigate whether keypoints that are central to differentiating signs in practice are being effectively used as expected by models. 
 
 ### Pose-Estimation Keypoints
-The keypoints used here were extracted using MediaPipe's Holistic package, specifically the Pose and Hand solutions. This extraction results in a total of 75 keypoints, each composed of x, y and z coordinates. 
+The keypoints used here were extracted using [MediaPipe's Holistic](https://github.com/google/mediapipe/blob/master/docs/solutions/holistic.md) package, specifically the Pose and Hand solutions. This extraction results in a total of 75 keypoints, each composed of x, y and z coordinates. 
 
 ![mediapipe pose map](images/mp_body.png)
 
